@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    }
+
+body{
+    height: 100%;
+}
+header{
+    padding: 3%;
+}
+
+.sobre{
+    display: flex;  
+    height: fit-content;
+    height: 50%;
+}
+
+.sobre .texto{
+    float: left;
+    width: 50%;
+}
+    
+.sobre .imagem{
+    float: right;
+    width: 50%;
+    height: fit-content;   
+}
+
+
+.sobre img{
+    height: 30vw;
+}
+
+.opcoes{
+    padding: 5%;
+}
+
+.opcoes .carrosel-opcoes{
+    box-sizing: border-box;
+    display: inline-block;
+    width: 100%;
+    
+}
+
+.carrosel-opcoes li{
+    display: inline-block;
+    height: 20vw;
+    width: 31%;
+    text-align: center;
+    font-size: 2vw;
+    background-color: antiquewhite;
+}
