@@ -14,6 +14,7 @@ header {
 
 nav ul{
   margin: 0;
+  width: 100%;
   list-style-type: none;
   display: flex;
   background-image: linear-gradient(#2E7D32, white);
