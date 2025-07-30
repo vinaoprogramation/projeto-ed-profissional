@@ -1,56 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="projeto.css">
-    <title>Projeto</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plataforma EcoSustentável</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-    <header> Projeto Eco-profit </header>
-    <section class="sobre">
-        <div class="texto">
+  <header>
+    <h1>Plataforma EcoSustentável</h1>
+    <p>Conectando empresas às isenções fiscais por práticas sustentáveis</p>
+  </header>
 
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus aliquam totam in debitis
-                repudiandae praesentium nulla modi fuga corporis, consequatur maxime dignissimos sint illo, asperiores
-                eos tenetur molestias, perferendis repellendus.Reprehenderit, distinctio, vel unde odio, sed sit
-                excepturi facilis quas modi qui fuga ducimus? Magnam natus nisi, nemo autem qui, eaque consequuntur
-                pariatur, officiis quae sed quisquam velit ullam! Necessitatibus.</span><span>Ratione cumque architecto
-                    cupiditate maiores porro incidunt ipsa accusantium velit id rerum, laborum, sint consectetur alias
-                    iure? Vitae placeat mollitia nostrum iure, minima quas, unde repudiandae dolores atque tempore
-                    expedita!</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus aliquam totam in debitis
-                repudiandae praesentium nulla modi fuga corporis, consequatur maxime dignissimos sint illo, asperiores
-                eos tenetur molestias, perferendis repellendus.Reprehenderit, distinctio, vel unde odio, sed sit
-                excepturi facilis quas modi qui fuga ducimus? Magnam natus nisi, nemo autem qui, eaque consequuntur
-                pariatur, officiis quae sed quisquam velit ullam! Necessitatibus.</span><span>Ratione cumque architecto
-                    cupiditate maiores porro incidunt ipsa accusantium velit id rerum, laborum, sint consectetur alias
-                    iure? Vitae placeat mollitia nostrum iure, minima quas, unde repudiandae dolores atque tempore
-                    expedita!</p>
+  <nav>
+    <ul>
+      <li><a href="proposito.html">Propósito</a></li>
+      <li><a href="nospergunte.html">Nos Pergunte</a></li>
+      <li><a href="index.html">Cadastro</a></li>
+      <li><a href="sobre.html">Sobre a Página</a></li>
+    </ul>
+  </nav>
 
-        </div>
+  <main>
+    <section class="form-section">
+      <h2>Cadastro da Empresa</h2>
+      <form id="empresaForm">
+        <label for="nome">Nome da Empresa:</label>
+        <input type="text" id="nome" name="nome" required />
 
-        <div class="imagem"> 
-            <img src="pexels-anton-massalov-2286386-32812838.jpg" alt="">
-        </div>
-            
-        
+        <label for="cnpj">CNPJ:</label>
+        <input type="text" id="cnpj" name="cnpj" required />
+
+        <label for="estado">Estado de Atuação:</label>
+        <select id="estado" name="estado" required>
+          <option value="">Selecione</option>
+          <option value="SP">São Paulo</option>
+          <option value="RJ">Rio de Janeiro</option>
+          <option value="MG">Minas Gerais</option>
+          <option value="RS">Rio Grande do Sul</option>
+        </select>
+
+        <label for="nicho">Nicho de Atuação:</label>
+        <select id="nicho" name="nicho" required>
+          <option value="">Selecione</option>
+          <option value="alimentos">Alimentos</option>
+          <option value="tecnologia">Tecnologia</option>
+          <option value="moda">Moda</option>
+          <option value="construcao">Construção</option>
+        </select>
+
+        <button type="submit">Consultar Isenções</button>
+      </form>
     </section>
-    <section class="opcoes">
-        <div class="carrosel-opcoes">
-            <ul>
-                <li>opção 1</li>
-                <li>opção 2</li>
-                <li>opção 3</li>
-            </ul>
-        </div>
-    </section>
 
-    <footer>
-        <p> Moral/direitos </p>
-    </footer>
+    <section id="resultado" class="resultado">
+      <!-- Resultado será exibido aqui -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Plataforma EcoSustentável. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
-
 </html>

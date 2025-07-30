@@ -1,53 +1,78 @@
-*{
-    margin: 0;
-    padding: 0;
-    }
-
-body{
-    height: 100%;
-}
-header{
-    padding: 3%;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f9f0;
+  margin: 0;
+  padding: 0;
 }
 
-.sobre{
-    display: flex;  
-    height: fit-content;
-    height: 50%;
+header {
+  background-color: #2e7d32;
+  color: white;
+  padding: 20px;
+  text-align: center;
 }
 
-.sobre .texto{
-    float: left;
-    width: 50%;
-}
-    
-.sobre .imagem{
-    float: right;
-    width: 50%;
-    height: fit-content;   
+nav ul{
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  background-image: linear-gradient(#2E7D32, white);
+  padding: 0.5vw 0 0 0;
+  box-sizing: border-box;
 }
 
-
-.sobre img{
-    height: 30vw;
+nav ul li{
+  padding: 1% 10% 1% 10%;
+  background-color: #349139;
+  color: white;
+  box-sizing: border-box;
+  width: fit-content;
 }
 
-.opcoes{
-    padding: 5%;
+main {
+  padding: 20px;
 }
 
-.opcoes .carrosel-opcoes{
-    box-sizing: border-box;
-    display: inline-block;
-    width: 100%;
-    
+.form-section {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.carrosel-opcoes li{
-    display: inline-block;
-    height: 20vw;
-    width: 31%;
-    text-align: center;
-    font-size: 2vw;
-    background-color: antiquewhite;
+form label {
+  display: block;
+  margin-top: 10px;
+}
+
+form input, form select, form button {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #388e3c;
+}
+
+.resultado {
+  margin-top: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #e8f5e9;
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 5px solid #2e7d32;
 }
