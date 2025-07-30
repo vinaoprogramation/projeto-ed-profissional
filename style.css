@@ -33,6 +33,7 @@ nav ul li{
   box-sizing: border-box;
   width: fit-content;
   text-align: center;
+  width: 24%;
 }
 
 main {
